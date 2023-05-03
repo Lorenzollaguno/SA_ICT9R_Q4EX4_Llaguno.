@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Q4 | Exercise 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style type="text/css">
+    img{
+      width: 25%;
+      height: 25%;
+    }
+  </style>
+</head>
+
+<title>Feet to cm Length Converter</title>
+<body class="bg-secondary">
+   <div class="container">
+     <h2 class="col p-3 mb-2 bg-dark text-muted">Feet Calculator</h2>
+         <p class="col p-3 mb-2 bg-dark text-muted">- This can convert units based on your input</p>
+
+              <table class="table table-hover table-muted">
+
+    <h2>Length Converter</h2>
+  <p>Type a value in the Feet field to convert the value to cm:</p>
+
+         <thread>
+             <tr>
+                <th scope="col">Input </th>
+                <th scope="col">Output</th>
+
+
+            
+            </tr> 
+          </thread>
+          <tbody>         
+      </tr>
+       <th scope="row">1</th>
+        <td>  <p>
+    <label>Feet</label>
+    <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+  </p>
+ 
+
+   <script>
+   function LengthConverter(valNum) {
+     document.getElementById("outputcm").innerHTML=valNum/0.032808;
+   }
+   </script></td>
+        <td> <p>cm: <span id="outputcm"></span></p> </td>
+           </tr>
+
+       <th scope="row">2</th>
+        <td> <p>
+    <label>Feet</label>
+    <input id="inputFeet2" type="number" placeholder="feet" oninput="LengthConverter2(this.value)" onchange="LengthConverter2(this.value)">
+   </p>
+ 
+  <script>
+  function LengthConverter2(valNum) {
+  document.getElementById("outputYards").innerHTML=valNum*0.33333;
+  }
+
+
+  </script></td>
+        <td><p>Yards: <span id="outputYards"></span></p></td>
+
+           </tr>
+       <th scope="row">3</th>
+        <td>  <p>
+  <label>Feet</label>
+  <input id="inputFeet3" type="number" placeholder="Feet" oninput="LengthConverter3(this.value)" onchange="LengthConverter3(this.value)">
+</p>
+
+<script>
+function LengthConverter3(valNum) {
+  document.getElementById("outputKilometers").innerHTML=valNum/0.0009144;
+}
+</script></td>
+        <td><p>Kilometers: <span id="outputKilometers"></span></p>
+</td>
+
+           </tr>
+       <th scope="row">4</th>
+        <td>  <label>Feet</label>
+  <input id="inputFeet4" type="number" placeholder="Feet" oninput="LengthConverter4(this.value)" onchange="LengthConverter4(this.value)">
+</p>
+
+
+<script>
+function LengthConverter4(valNum) {
+  document.getElementById("outputMiles").innerHTML=valNum*0.00018939;
+}
+</script>
+</td>
+        <td><p>Miles: <span id="outputMiles"></span></p></td>
+
+           </tr>
+
+
+
+
+  
+
+</div>
+
+
+</body>
+
+</html>
